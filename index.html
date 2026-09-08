@@ -16,11 +16,14 @@
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
-                    <a href="#project">Projects</a>
+                    <a href="#projects">Projects</a>
                     <a href="#journey">Journey</a>
                     <a href="#contact">Contact</a>
                 </div>
+                
                 <a href="#contact" class="connect-btn">Let's Connect</a>
+               <button class="menu-btn">☰</button>
+    
         </nav>
         <section class="hero" id="home">
             <div class="hero-content">
@@ -28,7 +31,7 @@
                 <h1>
                     Vasundhra <span>Chaubey</span>
                 </h1>
-                <h2>CSE(AI) Student | Web Developer | Coder</h2>
+                <h2 id="typing-text"></h2>
                 <p class="intro">
                 Passionate about building meaningful and user-friendly
                 web experiences. Always curious, always learning.
@@ -39,16 +42,17 @@
             </div>
             
             <div class="social-links">
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Email</a>
+                <a href="https://github.com/chbyvasundhra" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/vasundhra-chaubey-857449354" target="_blank">LinkedIn</a>
+                <a href="mailto:chaubeyvasundhra8@gmail.com" target="_blank">Email</a>
             </div>
 
             </div>
             <div class="hero-image">
             <div class="image-circle">
-                <!-- Later we will put your image here -->
-                <p>YOUR<br>PHOTO</p>
+            <div class="image-circle">
+    <img src="images/hero.png" alt="Vasundhra coding">
+</div>
             </div>
         </section>
         <!-- About Section -->
@@ -177,10 +181,11 @@
 
         <!-- Project 1 -->
         <div class="project-card">
-
             <div class="project-image">
-                <span>🌐</span>
-            </div>
+    <img src="images/portfolio.png" alt="Personal Portfolio">
+</div>
+
+           
 
             <div class="project-content">
 
@@ -198,8 +203,8 @@
                 </div>
 
                 <div class="project-links">
-                    <a href="#">Live Demo →</a>
-                    <a href="#">GitHub →</a>
+                    <a href="https://chbyvasundhra.github.io/vasundhra-portfolio/" target="_blank">Live Demo →</a>
+<a href="https://github.com/chbyvasundhra/vasundhra-portfolio" target="_blank">GitHub →</a>
                 </div>
 
             </div>
@@ -343,7 +348,9 @@
     <div class="section-title">
         <p>GET IN TOUCH</p>
         <h2>Let's <span>Connect</span></h2>
+        
     </div>
+    
 
     <div class="contact-container">
 
@@ -356,48 +363,51 @@
                 collaborations and interesting projects.
             </p>
 
-            <div class="contact-info">
+           <div class="contact-info">
 
-                <p>
-                    📧
-                    <span>Email</span>
-                </p>
+    <p>
+        📧
+        <a href="mailto:chaubeyvasundhra8@gmail.com">chaubeyvasundhra8@gmail.com</a>
+    </p>
 
-                <p>
-                    💼
-                    <span>LinkedIn</span>
-                </p>
+    <p>
+        💼
+        <a href="https://www.linkedin.com/in/vasundhra-chaubey-857449354" target="_blank">LinkedIn</a>
+    </p>
 
-                <p>
-                    🐙
-                    <span>GitHub</span>
-                </p>
+    <p>
+        🐙
+        <a href="https://github.com/chbyvasundhra" target="_blank">GitHub</a>
+    </p>
+
+           </div>
 
             </div>
 
         </div>
-
-
-        <form class="contact-form">
-
+        <form class="contact-form" action="https://formspree.io/f/mdeowvoy" method="POST">
             <input 
                 type="text" 
+                name="name"
                 placeholder="Your Name"
                 required
             >
 
             <input 
                 type="email" 
+                name="email"
                 placeholder="Your Email"
                 required
             >
 
             <input 
                 type="text" 
+                name="subject"
                 placeholder="Subject"
             >
 
             <textarea 
+                name="message"
                 placeholder="Your Message"
                 rows="6"
                 required
@@ -441,9 +451,8 @@
     </div>
 
 </footer>
-
-
-</section>
+<button id="scrollTopBtn">↑</button>
+<script src="script.js"></script>
     </body>
 
 </html>
